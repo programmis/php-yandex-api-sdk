@@ -1,0 +1,23 @@
+{
+  "name": "programmis/php-yandex-api-sdk",
+  "description": "Lib for Yandex Api",
+  "homepage": "https://github.com/programmis/php-yandex-api-sdk",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Daniil Sazhin",
+      "email": "sazhin_daniil@mail.ru"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "psr/log": "1.*",
+    "php": ">=5.3.0",
+    "symfony/yaml": "2.*|3.*",
+    "programmis/api-rator": "1.*"
+  },
+  "autoload": {
+    "psr-4": {"YaDirectSdk\\": "lib/YaDirectSdk"}
+  }
+}
