@@ -16,6 +16,7 @@ class CampaignsGet extends Request
             [
                 'SelectionCriteria' => (object)array(),
                 "FieldNames" => [
+                    "Id",
                     "Name",
                     "DailyBudget",
                     "Funds",
