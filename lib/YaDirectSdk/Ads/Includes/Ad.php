@@ -104,5 +104,5 @@ class Ad
         $this->adGroupId = $adGroupId;
         return $this;
     }
-    
+
 }

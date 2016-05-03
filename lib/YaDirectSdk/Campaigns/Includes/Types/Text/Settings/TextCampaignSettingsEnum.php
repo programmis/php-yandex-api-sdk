@@ -18,7 +18,8 @@ abstract class TextCampaignSettingsEnum
     const EXCLUDE_PAUSED_COMPETING_ADS = 'EXCLUDE_PAUSED_COMPETING_ADS';
     const MAINTAIN_NETWORK_CPC = 'MAINTAIN_NETWORK_CPC';
     const REQUIRE_SERVICING = 'REQUIRE_SERVICING';
-        
-    abstract public function enableOption($option /** @var string (TextCampaignSettingsEnum const) */);
-    abstract public function disableOption($option /** @var string (TextCampaignSettingsEnum const) */);
+
+    abstract public function enableOption($option/** @var string (TextCampaignSettingsEnum const) */);
+
+    abstract public function disableOption($option/** @var string (TextCampaignSettingsEnum const) */);
 }

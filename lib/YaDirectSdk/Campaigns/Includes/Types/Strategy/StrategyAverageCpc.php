@@ -55,5 +55,5 @@ class StrategyAverageCpc
         $this->weeklySpendLimit = $weeklySpendLimit;
         return $this;
     }
- 
+
 }

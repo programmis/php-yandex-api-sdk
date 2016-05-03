@@ -41,5 +41,5 @@ class DictionariesGet extends Request
         $this->dictionaryNames[] = $dictionaryName;
         return $this;
     }
-    
+
 }

@@ -27,7 +27,7 @@ class TextCampaignSearchStrategy extends TextCampaignSearchStrategyEnum
 
 
     public function setBiddingStrategyType(
-        $biddingStrategyType /** @var string (TextCampaignSearchStrategyEnum const) */
+        $biddingStrategyType/** @var string (TextCampaignSearchStrategyEnum const) */
     )
     {
         $this->biddingStrategyType = $biddingStrategyType;
@@ -141,5 +141,5 @@ class TextCampaignSearchStrategy extends TextCampaignSearchStrategyEnum
         $this->wbMaximumClicks = $wbMaximumClicks;
         return $this;
     }
-    
+
 }

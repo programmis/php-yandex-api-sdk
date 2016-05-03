@@ -42,13 +42,14 @@ class AdsAdd extends Request
         return $this;
     }
 
-    private function getAdsInArray(){
+    private function getAdsInArray()
+    {
         $ads = [];
 
         /**
          * @var Ad $ad
          */
-        foreach ($this->getAds() as $ad){
+        foreach ($this->getAds() as $ad) {
             $ads[] = $ad->getJsonData();
         }
 

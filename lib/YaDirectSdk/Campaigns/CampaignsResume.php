@@ -42,5 +42,5 @@ class CampaignsResume extends Request
         $this->Ids[] = $Id;
         return $this;
     }
-    
+
 }

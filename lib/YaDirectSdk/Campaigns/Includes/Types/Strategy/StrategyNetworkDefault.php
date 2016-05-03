@@ -55,5 +55,5 @@ class StrategyNetworkDefault
         $this->bidPercent = $bidPercent;
         return $this;
     }
-    
+
 }

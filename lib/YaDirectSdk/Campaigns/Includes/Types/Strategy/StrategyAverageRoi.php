@@ -147,5 +147,5 @@ class StrategyAverageRoi
         $this->profitability = $profitability;
         return $this;
     }
-    
+
 }

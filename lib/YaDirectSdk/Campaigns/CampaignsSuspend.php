@@ -42,5 +42,5 @@ class CampaignsSuspend extends Request
         $this->Ids[] = $Id;
         return $this;
     }
-    
+
 }

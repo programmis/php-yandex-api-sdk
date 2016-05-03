@@ -103,5 +103,5 @@ class TextCampaign
         $this->biddingStrategy = $biddingStrategy;
         return $this;
     }
-    
+
 }

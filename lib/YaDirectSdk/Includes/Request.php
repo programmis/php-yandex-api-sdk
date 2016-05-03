@@ -17,7 +17,7 @@ abstract class Request extends \ApiRator\Includes\Request implements YaInterface
     {
         $this->addHeader('Content-type', 'application/json');
 
-        if(!$loggerInterface){
+        if (!$loggerInterface) {
             $loggerInterface = new Logger();
         }
         parent::__construct('yarg', $loggerInterface);
@@ -38,7 +38,7 @@ abstract class Request extends \ApiRator\Includes\Request implements YaInterface
         $json = json_decode($content);
         return $json;
     }
-    
+
     public function getResultApiUrl()
     {
         list($type, $method) = explode('.', $this->getMethod());
@@ -53,7 +53,7 @@ abstract class Request extends \ApiRator\Includes\Request implements YaInterface
         $this->addHeader('Accept-Language', self::API_LANGUAGE);
 
         $url = self::API_URL . '/' . self::API_TYPE . '/' . self::API_VERSION . '/' . $type;
-        
+
         return $url;
     }
 

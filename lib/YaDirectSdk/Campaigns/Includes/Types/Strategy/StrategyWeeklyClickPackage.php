@@ -7,7 +7,7 @@ use YaDirectSdk\Includes\JsonData;
 
 class StrategyWeeklyClickPackage
 {
-    
+
     use JsonData;
 
     /**
@@ -78,5 +78,5 @@ class StrategyWeeklyClickPackage
         $this->bidCeiling = $bidCeiling;
         return $this;
     }
-    
+
 }

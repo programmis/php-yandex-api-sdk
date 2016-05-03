@@ -42,5 +42,5 @@ class CampaignsArchive extends Request
         $this->Ids[] = $Id;
         return $this;
     }
-    
+
 }

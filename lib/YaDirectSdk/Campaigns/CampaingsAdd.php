@@ -29,22 +29,25 @@ class CampaingsAdd extends Request
      * @param Campaign $campaign
      * @return $this
      */
-    public function addCampaign($campaign){
+    public function addCampaign($campaign)
+    {
         $this->campaigns[] = $campaign;
         return $this;
     }
 
-    public function getCampaigns(){
+    public function getCampaigns()
+    {
         return $this->campaigns;
     }
 
-    private function getCampaignsInArray(){
+    private function getCampaignsInArray()
+    {
         $campaigns = [];
 
         /**
          * @var Campaign $campaign
          */
-        foreach ($this->getCampaigns() as $campaign){
+        foreach ($this->getCampaigns() as $campaign) {
             $campaigns[] = $campaign->getJsonData();
         }
 

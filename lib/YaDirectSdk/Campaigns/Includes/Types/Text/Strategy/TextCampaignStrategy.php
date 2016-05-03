@@ -56,5 +56,5 @@ class TextCampaignStrategy
         $this->network = $network;
         return $this;
     }
-    
+
 }

@@ -55,5 +55,5 @@ class StrategyMaximumClicks
         $this->bidCeiling = $bidCeiling;
         return $this;
     }
-    
+
 }

@@ -9,7 +9,7 @@ class StrategyMaximumConversionRate
 {
 
     use JsonData;
-    
+
     /**
      * @var integer $weeklySpendLimit
      */
@@ -78,5 +78,5 @@ class StrategyMaximumConversionRate
         $this->bidCeiling = $bidCeiling;
         return $this;
     }
-    
+
 }

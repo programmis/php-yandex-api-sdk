@@ -16,6 +16,8 @@ abstract class TextCampaignNetworkStrategyEnum
     const WEEKLY_CLICK_PACKAGE = 'WEEKLY_CLICK_PACKAGE';
     const SERVING_OFF = 'SERVING_OFF';
 
-    abstract public function setBiddingStrategyType($biddingStrategyType /** @var string (TextCampaignNetworkStrategyEnum const) */);
+    abstract public function setBiddingStrategyType(
+        $biddingStrategyType/** @var string (TextCampaignNetworkStrategyEnum const) */
+    );
 
 }

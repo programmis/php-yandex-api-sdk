@@ -17,7 +17,7 @@ class Campaign
      * @var string $name
      */
     private $name;
-    
+
     /**
      * @var string $startDate
      */

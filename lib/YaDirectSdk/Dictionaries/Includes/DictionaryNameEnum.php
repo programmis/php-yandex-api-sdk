@@ -15,5 +15,5 @@ class DictionaryNameEnum
     const OperationSystemVersions = 'OperationSystemVersions';
     const ProductivityAssertions = 'ProductivityAssertions';
     const SupplySidePlatforms = 'SupplySidePlatforms';
-    
+
 }

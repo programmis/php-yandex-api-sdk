@@ -44,13 +44,14 @@ class AdGroupsAdd extends Request
     }
 
 
-    private function getAdGroupsInArray(){
+    private function getAdGroupsInArray()
+    {
         $adGroups = [];
 
         /**
          * @var AdGroup $adGroup
          */
-        foreach ($this->getAdGroups() as $adGroup){
+        foreach ($this->getAdGroups() as $adGroup) {
             $adGroups[] = $adGroup->getJsonData();
         }
 

@@ -9,5 +9,5 @@ class MobileAppAdGroup
 {
 
     use JsonData;
-    
+
 }

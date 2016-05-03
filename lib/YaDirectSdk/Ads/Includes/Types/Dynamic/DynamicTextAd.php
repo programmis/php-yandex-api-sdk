@@ -9,5 +9,5 @@ class DynamicTextAd
 {
 
     use JsonData;
-    
+
 }

@@ -101,5 +101,5 @@ class StrategyAverageCpa
         $this->bidCeiling = $bidCeiling;
         return $this;
     }
-    
+
 }

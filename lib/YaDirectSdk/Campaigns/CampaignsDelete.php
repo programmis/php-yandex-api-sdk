@@ -7,9 +7,9 @@ use YaDirectSdk\Includes\Request;
 
 class CampaignsDelete extends Request
 {
-    
+
     private $Ids = [];
-    
+
     public function doRequest()
     {
         $this->setMethod('campaigns.delete');
@@ -43,5 +43,5 @@ class CampaignsDelete extends Request
         return $this;
     }
 
-        
+
 }

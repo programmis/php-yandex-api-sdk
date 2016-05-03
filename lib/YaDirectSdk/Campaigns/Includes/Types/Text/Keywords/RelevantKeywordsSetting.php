@@ -14,7 +14,7 @@ class RelevantKeywordsSetting extends RelevantKeywordsModeEnum
      * @var integer $budgetPercent
      */
     private $budgetPercent;
-    
+
     private $mode;
 
     /**

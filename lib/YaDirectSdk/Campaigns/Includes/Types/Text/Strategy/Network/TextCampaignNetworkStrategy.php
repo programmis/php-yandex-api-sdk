@@ -25,14 +25,14 @@ class TextCampaignNetworkStrategy extends TextCampaignNetworkStrategyEnum
      * @var string $biddingStrategyType
      */
     private $biddingStrategyType;
-    
+
     /**
      * @var StrategyNetworkDefault $networkDefault
      */
     private $networkDefault;
 
     public function setBiddingStrategyType(
-        $biddingStrategyType /** @var string (TextCampaignNetworkStrategyEnum const) */
+        $biddingStrategyType/** @var string (TextCampaignNetworkStrategyEnum const) */
     )
     {
         $this->biddingStrategyType = $biddingStrategyType;

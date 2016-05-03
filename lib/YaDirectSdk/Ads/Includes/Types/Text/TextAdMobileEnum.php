@@ -8,5 +8,5 @@ class TextAdMobileEnum
 
     const YES = "YES";
     const NO = "NO";
-    
+
 }

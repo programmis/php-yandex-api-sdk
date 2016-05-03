@@ -24,5 +24,5 @@ trait TextCampaignStrategyTrait
      * @var StrategyAverageRoi $averageRoi
      */
     private $averageRoi;
-    
+
 }
