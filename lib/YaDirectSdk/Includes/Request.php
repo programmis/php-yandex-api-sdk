@@ -35,7 +35,8 @@ abstract class Request extends \ApiRator\Includes\Request implements YaInterface
 
     public function answerProcessing($content)
     {
-        echo $content;
+        $json = json_decode($content);
+        return $json;
     }
     
     public function getResultApiUrl()
@@ -58,7 +59,7 @@ abstract class Request extends \ApiRator\Includes\Request implements YaInterface
 
     public function handleParameters($parameters)
     {
-        return json_encode($parameters); 
+        return json_encode($parameters);
     }
 
     abstract public function doRequest();
