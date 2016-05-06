@@ -21,7 +21,8 @@ class AdsAdd extends Request
             'Ads' => $this->getAdsInArray()
         ]);
 
-        $this->execApi();
+        $result = $this->execApi();
+		return $result;
     }
 
     /**

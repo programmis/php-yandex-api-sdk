@@ -22,7 +22,8 @@ class AdsUnArchive extends Request
             ]
         );
 
-        $this->execApi();
+        $result = $this->execApi();
+		return $result;
     }
 
     /**

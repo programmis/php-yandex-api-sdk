@@ -22,7 +22,8 @@ class AdGroupsAdd extends Request
             'AdGroups' => $this->getAdGroupsInArray()
         ]);
 
-        $this->execApi();
+        $result = $this->execApi();
+		return $result;
     }
 
     /**

@@ -22,7 +22,8 @@ class CampaingsAdd extends Request
             'Campaigns' => $this->getCampaignsInArray()
         ]);
 
-        $this->execApi();
+        $result = $this->execApi();
+		return $result;
     }
 
     /**
