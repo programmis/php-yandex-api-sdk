@@ -45,7 +45,7 @@ class AdGroupsAdd extends Request
     }
 
 
-    private function getAdGroupsInArray()
+    protected function getAdGroupsInArray()
     {
         $adGroups = [];
 
