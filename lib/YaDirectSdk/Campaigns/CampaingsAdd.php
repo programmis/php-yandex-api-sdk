@@ -41,7 +41,7 @@ class CampaingsAdd extends Request
         return $this->campaigns;
     }
 
-    private function getCampaignsInArray()
+    protected function getCampaignsInArray()
     {
         $campaigns = [];
 

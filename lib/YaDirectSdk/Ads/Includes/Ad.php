@@ -14,6 +14,11 @@ class Ad
     use JsonData;
 
     /**
+     * @var integer $id
+     */
+    private $id;
+    
+    /**
      * @var TextAd $textAd
      */
     private $textAd;
@@ -32,6 +37,24 @@ class Ad
      * @var integer $adGroupId
      */
     private $adGroupId;
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     * @return $this
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+        return $this;
+    }
 
     /**
      * @return TextAd

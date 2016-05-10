@@ -14,6 +14,11 @@ class Campaign
     use JsonData;
 
     /**
+     * @var integer $id
+     */
+    private $id;
+
+    /**
      * @var string $name
      */
     private $name;
@@ -78,6 +83,24 @@ class Campaign
      */
     private $timeZone;
 
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     * @return $this
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+        return $this;
+    }
+    
     /**
      * @return string
      */
