@@ -9,7 +9,10 @@ use YaDirectSdk\Keywords\Includes\Keyword;
 class KeywordsAdd extends Request
 {
 
-    private $keywords;
+    /**
+     * @var array $keywords
+     */
+    private $keywords = [];
 
     public function doRequest()
     {
@@ -32,12 +35,12 @@ class KeywordsAdd extends Request
     }
 
     /**
-     * @param mixed $keywords
+     * @param Keyword $keyword
      * @return $this
      */
-    public function setKeywords($keywords)
+    public function addKeyword($keyword)
     {
-        $this->keywords = $keywords;
+        $this->keywords[] = $keyword;
         return $this;
     }
 
