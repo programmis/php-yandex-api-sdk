@@ -9,7 +9,7 @@ use YaDirectSdk\Includes\Request;
 class AdsAdd extends Request
 {
     /**
-     * @var array $campaigns
+     * @var array $ads
      */
     private $ads = [];
 
@@ -21,7 +21,8 @@ class AdsAdd extends Request
             'Ads' => $this->getAdsInArray()
         ]);
 
-        $this->execApi();
+        $result = $this->execApi();
+		return $result;
     }
 
     /**
@@ -42,7 +43,7 @@ class AdsAdd extends Request
         return $this;
     }
 
-    private function getAdsInArray()
+    protected function getAdsInArray()
     {
         $ads = [];
 

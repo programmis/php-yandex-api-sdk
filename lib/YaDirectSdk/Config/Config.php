@@ -23,7 +23,11 @@ class Config
             if (isset($parse['yandexdirect']) && isset($parse['yandexdirect'][$param])) {
                 return $parse['yandexdirect'][$param];
             } else {
-                throw new ParseException("not found '" . $param . "' config parameter");
+                if ($required) {
+                    throw new ParseException("not found '" . $param . "' config parameter");
+                } else {
+                    return false;
+                }
             }
         } catch (ParseException $pe) {
             if ($required) {

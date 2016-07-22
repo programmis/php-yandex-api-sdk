@@ -19,6 +19,7 @@ abstract class Request extends \ApiRator\Includes\Request implements YaInterface
 
         if (!$loggerInterface) {
             $loggerInterface = new Logger();
+            $loggerInterface->setDebug(Config::getParam('debug'));
         }
         parent::__construct(self::MAGIC_PREFIX, $loggerInterface);
     }

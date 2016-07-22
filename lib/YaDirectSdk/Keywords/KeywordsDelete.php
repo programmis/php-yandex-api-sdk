@@ -1,18 +1,18 @@
 <?php
 
-namespace YaDirectSdk\Ads;
+namespace YaDirectSdk\Keywords;
 
 
 use YaDirectSdk\Includes\Request;
 
-class AdsModerate extends Request
+class KeywordsDelete extends Request
 {
 
     private $Ids = [];
 
     public function doRequest()
     {
-        $this->setMethod('ads.moderate');
+        $this->setMethod('keywords.delete');
 
         $this->setParameter('params',
             [
@@ -23,7 +23,7 @@ class AdsModerate extends Request
         );
 
         $result = $this->execApi();
-		return $result;
+        return $result;
     }
 
     /**

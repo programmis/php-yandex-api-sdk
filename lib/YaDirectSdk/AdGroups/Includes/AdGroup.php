@@ -13,6 +13,11 @@ class AdGroup
     use JsonData;
 
     /**
+     * @var integer $id
+     */
+    private $id;
+    
+    /**
      * @var string $name
      */
     private $name;
@@ -46,6 +51,24 @@ class AdGroup
      * @var DynamicTextAdGroup $dynamicTextAdGroup
      */
     private $dynamicTextAdGroup;
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     * @return $this
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+        return $this;
+    }
 
     /**
      * @return string

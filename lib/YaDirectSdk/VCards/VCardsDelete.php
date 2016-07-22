@@ -1,18 +1,18 @@
 <?php
 
-namespace YaDirectSdk\Ads;
+namespace YaDirectSdk\VCards;
 
 
 use YaDirectSdk\Includes\Request;
 
-class AdsModerate extends Request
+class VCardsDelete extends Request
 {
 
     private $Ids = [];
 
     public function doRequest()
     {
-        $this->setMethod('ads.moderate');
+        $this->setMethod('vcards.delete');
 
         $this->setParameter('params',
             [
@@ -23,7 +23,7 @@ class AdsModerate extends Request
         );
 
         $result = $this->execApi();
-		return $result;
+        return $result;
     }
 
     /**
