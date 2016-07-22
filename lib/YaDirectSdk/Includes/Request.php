@@ -20,7 +20,7 @@ abstract class Request extends \ApiRator\Includes\Request implements YaInterface
         if (!$loggerInterface) {
             $loggerInterface = new Logger();
         }
-        parent::__construct('yarg', $loggerInterface);
+        parent::__construct(self::MAGIC_PREFIX, $loggerInterface);
     }
 
     public function getErrorCode()

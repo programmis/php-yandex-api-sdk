@@ -10,5 +10,6 @@ interface YaInterface
     const API_URL = "https://api-sandbox.direct.yandex.ru/";
     const API_TYPE = 'json';
     const API_LANGUAGE = 'ru';
+    const MAGIC_PREFIX = 'yarg';
 
 }
